@@ -37,8 +37,6 @@ type Info struct {
 func Lookup(address string) (info *Info, err error) {
 	info = new(Info)
 
-	address = "ijoaijsdfj  ajisdjf"
-
 	client := &http.Client{}
 	data := url.Values{"Address": {address}}
 	request, err := http.NewRequest("POST", ADSL2ExchangesURL,

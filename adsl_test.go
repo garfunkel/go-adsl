@@ -11,4 +11,10 @@ func TestLookup(t *testing.T) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	_, err = Lookup("oajsodifj asdhfiji")
+
+	if err == nil {
+		log.Fatal("address should not exist")
+	}
 }
